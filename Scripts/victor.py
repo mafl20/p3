@@ -2,7 +2,7 @@ import cv2
 
 print('hello martin')
 
-imageName = "DX-9.JPG"
+imageName = "images\\DX-9.JPG"
 
 image = cv2.imread(imageName, -1)
 
