@@ -1,12 +1,19 @@
+import numpy as np
 import cv2
 
-print('hello martin')
+cap = cv2.VideoCapture('images\\IMG_0833.MOV')
 
-imageName = "DX-9.JPG"
+fgbg = cv2.createBackgroundSubtractorMOG2()
 
-image = cv2.imread(imageName, -1)
+while(1):
+    ret, frame = cap.read()
 
-cv2.imshow("MyImage",image)
+    fgmask = fgbg.apply(frame)
 
-cv2.waitKey(0)
+    cv2.imshow('frame',fgmask)
+    k = cv2.waitKey(30) & 0xff
+    if k == 27:
+        break
+
+cap.release()
 cv2.destroyAllWindows()
