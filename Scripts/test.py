@@ -1,6 +1,12 @@
 import cv2
 
+from TestClass import TestClass
+
 def main_function():
+    victor = TestClass()
+
+    victor.martin_er_sej("amogus")
+
     while True:
         user_input = cv2.waitKey(0)
 
@@ -13,5 +19,4 @@ def main_function():
 
     cv2.destroyAllWindows()
 
-if __name__ == '__main__':
-    main_function()
+main_function()
