@@ -2,11 +2,15 @@ import cv2
 
 print("Amogus")
 
-imageName = "images\\meeeee.jpg"
+imageName = cv2.imread("images\\meeeee.jpg", 1)
 
-image = cv2.imread(imageName, -1)
-
-cv2.imshow("MyImage",image)
-
+imageResize = cv2.resize(imageName,(200,350))
+cv2.imshow("Me have become resize", imageResize)
+cv2.imshow("Hrello dis me", imageName)
 cv2.waitKey(0)
-cv2.destroyAllWindows()
+
+
+
+
+
+
