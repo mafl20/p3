@@ -7,4 +7,3 @@ resizeimage=cv2.resize(image, (200,200))
 cv2.imshow("Hej",image)
 
 cv2.waitKey(0)
-
