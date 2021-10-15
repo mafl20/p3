@@ -1,6 +1,6 @@
 import cv2
 
-from TestClass import TestClass
+from Classes.TestClass import TestClass
 
 def main_function():
     victor = TestClass()    #we make an instance of TestClass, and call it victor
